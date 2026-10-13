@@ -4,36 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UrDU - Talaba Portali</title>
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS dizayn kutubxonasi -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 min-h-screen flex items-center justify-center p-6 font-sans">
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-4 font-sans">
 
-  <div class="w-full max-w-[400px] bg-white rounded-[2.5rem] shadow-2xl p-10 border border-slate-100">
-    <!-- Logo ve Başlık -->
-    <div class="flex flex-col items-center mb-10 text-center">
-      <div class="w-20 h-20 bg-blue-600 rounded-3xl flex items-center justify-center mb-6 shadow-xl shadow-blue-200">
-        <span class="text-white font-black text-2xl italic tracking-tighter">UrDU</span>
-      </div>
-      <h1 class="text-3xl font-black text-slate-800 tracking-tight leading-none">Talaba Portali</h1>
-      <p class="text-blue-600 text-[10px] font-bold uppercase tracking-[0.3em] mt-3">Urganch Davlat Universiteti</p>
+  <!-- O'rtadagi chiroyli karta -->
+  <div class="w-full max-w-sm bg-white rounded-3xl shadow-xl p-8 border border-slate-100 flex flex-col items-center text-center">
+    
+    <!-- Logo -->
+    <div class="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mb-5 shadow-lg shadow-blue-200">
+      <span class="text-white font-black text-2xl italic tracking-tighter">UrDU</span>
     </div>
 
-    <!-- Giriş Formu -->
-    <div class="space-y-4">
-      <input type="text" placeholder="Login / Talaba ID" class="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-2xl outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-700" />
-      <input type="password" placeholder="Parol" class="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-2xl outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-700" />
-      <button class="w-full py-4 bg-blue-600 text-white font-black rounded-2xl shadow-lg hover:bg-blue-700 transition-all active:scale-95 duration-200 mt-2">
+    <!-- Sarlavhalar -->
+    <h1 class="text-2xl font-black text-slate-800 tracking-tight">Talaba Portali</h1>
+    <p class="text-blue-600 text-[11px] font-bold uppercase tracking-widest mt-1 mb-8">
+      Urganch Davlat Universiteti
+    </p>
+
+    <!-- Forma -->
+    <form class="w-full space-y-4" onsubmit="event.preventDefault();">
+      <div>
+        <input 
+          type="text" 
+          placeholder="Login / Talaba ID" 
+          class="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all font-medium text-slate-700 text-sm placeholder:text-slate-400"
+        />
+      </div>
+
+      <div>
+        <input 
+          type="password" 
+          placeholder="Parol" 
+          class="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all font-medium text-slate-700 text-sm placeholder:text-slate-400"
+        />
+      </div>
+
+      <button 
+        type="submit" 
+        class="w-full py-3.5 bg-blue-600 text-white font-bold text-sm rounded-xl shadow-md hover:bg-blue-700 active:scale-95 transition-all duration-150 mt-2"
+      >
         TIZIMGA KIRISH
       </button>
-    </div>
+    </form>
 
-    <!-- Alt Bilgi -->
-    <div class="mt-12 text-center border-t border-slate-50 pt-8">
-      <p class="text-slate-400 text-[9px] font-bold uppercase tracking-[0.4em]">
+    <!-- Mualliflik huquqi -->
+    <div class="mt-8 pt-6 border-t border-slate-100 w-full">
+      <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">
         Developed by Murat Sultanov
       </p>
     </div>
+
   </div>
 
 </body>
